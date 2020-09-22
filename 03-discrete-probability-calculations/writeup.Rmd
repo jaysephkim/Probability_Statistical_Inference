@@ -6,7 +6,6 @@ output:
 ---
 
 # Introduction
-
 The Braves and the Yankees are competing in the World Series this year. To win the World Series, a team must win best of 7 games, in any order that may happen. For example, a team can win the first 4 games right off the bat, or lose the first 3, then go on to win the next 4. Let P(y) be the probability that the Yankees win 1 game (a head to head match up) and P(b) be the probability that the Braves win 1 game. In this blog post we will analyze the probability of the Braves winning the World Series given various circumstances. 
 
 A concept to be familiar with prior is the Negative binomial distribution. It is a discrete probability distribution that models the number of successes in a sequence of independent and identically distributed Bernoulli trials before a specified number of failures occurs.
