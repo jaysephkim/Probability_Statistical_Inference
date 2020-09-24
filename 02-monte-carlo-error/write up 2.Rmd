@@ -31,6 +31,7 @@ lines(x=log(n), y= abs.err[4,], col="purple")
 lines(x=log(n), y= abs.err[3,], col="green")
 lines(x=log(n), y= abs.err[2,], col="blue")
 lines(x=log(n), y= abs.err[1,], col="red")
+legend("topright", legend=c("p=0.01", "p=0.05", "p=0.10","p=0.25","p=0.50"), fill =c("red", "blue","green","purple","orange"), title="Legend", text.font=1)
 
 
 plot(x=log(n), y= rel.err[1,], xaxt='n', type="l", col="red", ylim=c(0,2), main="Relative Error", xlab = "Number of Trials", ylab = "Error")
@@ -39,6 +40,7 @@ lines(x=log(n), y= rel.err[4,], col="purple")
 lines(x=log(n), y= rel.err[3,], col="green")
 lines(x=log(n), y= rel.err[2,], col="blue")
 lines(x=log(n), y= rel.err[5,], col="orange")
+legend("topright", legend=c("p=0.01", "p=0.05", "p=0.10","p=0.25","p=0.50"), fill =c("red", "blue","green","purple","orange"), title="Legend", text.font=1)
 ```
 
 # Interpertation 
