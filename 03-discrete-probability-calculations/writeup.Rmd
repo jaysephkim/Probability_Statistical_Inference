@@ -1,19 +1,15 @@
 ---
 title: "Discrete Probability Calculations"
-output: 
-  html_document:
-    code_folding: hide
+output: github_document
 ---
 
 # Introduction
-
 The Braves and the Yankees are competing in the World Series this year. To win the World Series, a team must win best of 7 games, in any order that may happen. For example, a team can win the first 4 games right off the bat, or lose the first 3, then go on to win the next 4. Let P(y) be the probability that the Yankees win 1 game (a head to head match up) and P(b) be the probability that the Braves win 1 game. In this blog post we will analyze the probability of the Braves winning the World Series given various circumstances. 
 
 A concept to be familiar with prior is the Negative binomial distribution. It is a discrete probability distribution that models the number of successes in a sequence of independent and identically distributed Bernoulli trials before a specified number of failures occurs.
 
 # Methods
 1. If P(Braves winning 1 game) = 0.55, then P(Yankees winning 1 game) = 0.45. There are three ways to do this. First, the P(B win World Series) = P(4 games| P(b)=0.55) is represented below. 
-
 
 $$ = 0.55^4+ {4\choose 3} 0.55^4(1-0.55)+{5\choose 3} 0.55^4(1-0.55)^2+{6\choose 3} 0.55^4(1-0.55)^3 =0.6083$$
 The first term represents the probability the Braves win the first 4 games. The second term represents the Braves winning in 5 games: 4 choose 3 determines which 3 of the first 4 games (because the 5th game has to be a win, that outcome is already decided) the Braves win. We then multiply it by (0.55)^4 because that is the probability of the Braves winning 4 times, and then multiply it by (1-0.55) because that is the probability that they lose once. The second term represents the Braves winning in 6 games: 5 choose 3 determines which 3 of the first 5 games (because the 6th game has to be a win, that outcome is already decided) the Braves win. We then multiply it by the respective probabilities. The same process is repeated for when the Braves win in 7 total games. 
